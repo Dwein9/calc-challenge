@@ -15,7 +15,8 @@ Certain health conditions increase the cost of insurance:
 + Females have a longer life expectancy, so receive a $12 discount on the final price.
 
 ##### Expected input
-First Name | Age | Gender | Health Conditions
-Kelly | 50 | female | Allergies
-Josh | 40 | male | Sleep Apnea
-Brad | 20 | male | Heart Disease
+| First Name  | Age | Gender | Health Condition  |
+| ------------|:---:| :-----:|:-----------------:|
+| Kelly       | 50  | female | Allergies         |
+| Josh        | 40  | male   | Sleep Apnea       |
+| Brad        | 20  | male   | Heart Disease     |
