@@ -1,6 +1,4 @@
 # calc-challenge
-The following was a code challenge a buddy sent to me. This repo is my answer.
-
 ##### Background
 You've been asked to build a pricing engine that prints out the estimated policy price for a given person. Keep in mind that this is an MVP that may fail once we launch, or could grow into a large application with very complex pricing rules. Try to strike a balance between creating an application that will be maintainable as it grows, with spending too much time building something that may end up failing. Please use whatever language you’re comfortable with.  For best results, use a vanilla language, not a framework as this will force modeling, OO and will allow you to showcase your design decisions.
 
