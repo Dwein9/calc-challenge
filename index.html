@@ -28,19 +28,19 @@
               </div>
               <div class="col radio">
                 <div class="radio">
-                  <label><input type="radio" name="gender" required>Male</label>
+                  <label><input type="radio" name="gender" value="male" required>Male</label>
                 </div>
                 <div class="radio">
-                  <label><input type="radio" name="gender" required>Female</label>
+                  <label><input type="radio" name="gender" value="female" required>Female</label>
                 </div>
               </div>
             </div>
 
             <div class="checkbox-container">
               <p>Health Conditions:</p>
-              <label class="checkbox"><input type="checkbox">Allergies</label>
-              <label class="checkbox"><input type="checkbox">Sleep Apnea</label>
-              <label class="checkbox"><input type="checkbox">Heart Disease</label>
+              <label class="checkbox"><input type="checkbox" name="conditions" value="allergies">Allergies</label>
+              <label class="checkbox"><input type="checkbox" name="conditions" value="sleepApnea">Sleep Apnea</label>
+              <label class="checkbox"><input type="checkbox" name="conditions" value="heartDisease">Heart Disease</label>
 
             </div>
 
@@ -49,8 +49,10 @@
         </div>
 
       </div>
+    <!-- FORM ENDS -->
 
 
+    <!-- RESULTS BEGIN -->
      <div id="results" style="display:none">
 
      </div>
