@@ -17,31 +17,32 @@
           <h1>Welcome, please fill out the form.</h1>
           <div class="form">
             <div class="row input-container">
-              <span> First Name: <input id="name" class="input" type="text" placeholder="Name" required> </span>
+              <span class="text"> First Name: <input id="name" class="input" type="text" placeholder="Name" required> </span>
               <br/> <br/>
-              <span class="age"> Age: <input id="age" class="input" type="number" name="age" required> </span>
+              <span class="age text"> Age: <input id="age" class="input" type="number" min="18" name="age" required> </span>
             </div>
 
             <div class="row radio-container">
-              <div class="col">
+              <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 gender text">
                 <p>Gender:</p>
               </div>
-              <div class="col radio">
-                <div class="radio">
-                  <label><input type="radio" name="gender" value="male" required>Male</label>
-                </div>
-                <div class="radio">
-                  <label><input type="radio" name="gender" value="female" required>Female</label>
-                </div>
+
+              <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7  radio-btns">
+                  <label class="radio-inline"><input type="radio" name="gender" value="male" checked required>Male</label>
+                  <label class="radio-inline"><input type="radio" name="gender" value="female" required>Female</label>
               </div>
             </div>
 
             <div class="checkbox-container">
-              <p>Health Conditions:</p>
-              <label class="checkbox"><input type="checkbox" name="conditions" value="allergies">Allergies</label>
-              <label class="checkbox"><input type="checkbox" name="conditions" value="sleepApnea">Sleep Apnea</label>
-              <label class="checkbox"><input type="checkbox" name="conditions" value="heartDisease">Heart Disease</label>
+              <div class="conditions text">
+                <p>Conditions:</p>
+              </div>
 
+              <div class="checkbox-row">
+                <label class="checkbox"><input type="checkbox" name="conditions" value="allergies">Allergies</label>
+                <label class="checkbox"><input type="checkbox" name="conditions" value="sleepApnea">Sleep Apnea</label>
+                <label class="checkbox"><input type="checkbox" name="conditions" value="heartDisease">Heart Disease</label>
+              </div>
             </div>
 
             <button id="submit" class="btn" type="submit" name="submit" value="Submit">Submit</button>
@@ -55,6 +56,8 @@
     <!-- RESULTS BEGIN -->
      <div id="results" style="display:none">
 
+
+       <button id="return" class="btn" type="submit">Go Back</button>
      </div>
 
 

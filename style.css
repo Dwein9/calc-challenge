@@ -29,9 +29,35 @@ body {
   }
 
 .age {
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 .checkbox {
   margin-bottom: 10px;
+}
+
+.text {
+  font-size: 20px;
+  color: white;
+}
+
+.radio-container {
+  padding-top: 10px;
+}
+
+.gender {
+  padding-left: 40px;
+}
+
+.conditions {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.radio-btns {
+  padding-right: 50px;
+}
+
+.checkbox-row {
+  vertical-align: middle;
 }
