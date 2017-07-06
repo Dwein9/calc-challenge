@@ -1,0 +1,12 @@
+{
+  "name": "calc-challenge",
+  "version": "1.0.0",
+  "description": "Attempt to solve challenge",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
