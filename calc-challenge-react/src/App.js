@@ -11,11 +11,12 @@ class App extends Component {
     return (
       <div>
         <Navbar>
-          <a className="nav" href="#">Insurance Rates</a>
+          Insurance Rates
         </Navbar>
         <div className="container-fluid">
           <div className="row">
             <Form />
+            {/* <Form data={ user }/> */}
             <Result />
           </div>
         </div>
