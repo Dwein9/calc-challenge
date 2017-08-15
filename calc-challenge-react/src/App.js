@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from './components/form'
-import Result from './components/result'
 
 import { Navbar } from 'react-bootstrap';
 
@@ -16,8 +15,6 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             <Form />
-            {/* <Form data={ user }/> */}
-            <Result />
           </div>
         </div>
       </div>
