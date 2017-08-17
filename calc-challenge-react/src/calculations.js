@@ -4,18 +4,6 @@ module.exports = {
     return ((Math.floor((age - 18) / 5 )) * 20) + 100
   },
 
-  // allergiesIncrease: function(amount){
-  //   return (amount * 1.01).toFixed(2)
-  // },
-  //
-  // sleepApneaIncrease: function(amount){
-  //   return (amount * 1.06).toFixed(2)
-  // },
-  //
-  // heartDiseaseIncrease: function(amount){
-  //   return (amount * 1.17).toFixed(2)
-  // },
-
   conditionCost: function(conditions, quote) {
     var newQuote = quote;
 

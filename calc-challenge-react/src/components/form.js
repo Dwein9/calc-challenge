@@ -35,23 +35,26 @@ class Form extends Component {
   handleSubmit(e){
     e.preventDefault()
     if (this.state.user.age < 18) {
-      alert('You must be over 18');
+      alert('You must be over 18.');
+    } else {
+
+      var newQuote = calculate.conditionCost(this.state.user.conditions, calculate.ageCost(this.state.user.age)) + calculate.femaleDiscount(this.state.user.sex)
+
+      this.setState({
+        user: Object.assign( {}, this.state.user, { submitted: !this.state.user.submitted, quote: newQuote.toFixed(2) } )
+      })
     }
-
-    var newQuote = calculate.conditionCost(this.state.user.conditions, calculate.ageCost(this.state.user.age)) + calculate.femaleDiscount(this.state.user.sex)
-
-    this.setState({
-      user: Object.assign( {}, this.state.user, { submitted: !this.state.user.submitted, quote: newQuote  } )
-    })
-
   }
 
 
   render() {
     return (
       <div>
-        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 form">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <Result data= {this.state.user}/>
+        </div>
 
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <form ref="form" onSubmit={this.handleSubmit.bind(this)}>
 
             Name: <input className="center" type='text' placeholder="Name" value={this.state.user.name} onChange={this.handleInputChange.bind(this, 'name')}/> <br /> <br />
@@ -87,11 +90,8 @@ class Form extends Component {
                Submit
              </Button>
            </form>
-
-
+         </div>
         </div>
-        <Result data= {this.state.user}/>
-      </div>
     );
   }
 }
